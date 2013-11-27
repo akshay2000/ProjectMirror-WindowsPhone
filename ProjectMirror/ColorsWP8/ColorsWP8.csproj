@@ -111,14 +111,8 @@
     <Compile Include="Pages\AddCategoryPage.xaml.cs">
       <DependentUpon>AddCategoryPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AddToDoPage.xaml.cs">
-      <DependentUpon>AddToDoPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\EditCategoryPage.xaml.cs">
       <DependentUpon>EditCategoryPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\TasksPivotePage.xaml.cs">
-      <DependentUpon>TasksPivotePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\AppResources.Designer.cs">
@@ -146,15 +140,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\AddToDoPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\EditCategoryPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\TasksPivotePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -121,11 +121,6 @@ namespace ColorsWP8
         {
             await App.ViewModel.SyncCategoriesAsync();
             App.ViewModel.LoadCategories();
-        }
-
-        private void DummyButton_Click(object sender, EventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/Pages/TasksPivotePage.xaml", UriKind.Relative));
-        }
+        }     
     }
 }

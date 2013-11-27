@@ -90,8 +90,7 @@
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
 
             <shell:ApplicationBarIconButton x:Name="AddCatgegoryAppBarbutton" IconUri="/Assets/Icons/add.png" Text="add" Click="AddCatgegoryAppBarbutton_Click"/>
-            <shell:ApplicationBarIconButton x:Name="SyncAppBarButton" IconUri="Assets/Icons/refresh.png" Text="sync" Click="SyncAppBarButton_Click"/>
-            <shell:ApplicationBarIconButton x:Name="DummyButton" IconUri="Assets/Icons/check.png" Text="check" Click="DummyButton_Click"/>
+            <shell:ApplicationBarIconButton x:Name="SyncAppBarButton" IconUri="Assets/Icons/refresh.png" Text="sync" Click="SyncAppBarButton_Click"/>            
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem x:Name="AboutAppBarMenuItem" Text="about" />
                 <shell:ApplicationBarMenuItem x:Name="FeedbackAppBarMenuItem" Text="feedback"/>
