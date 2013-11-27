@@ -6,7 +6,7 @@
 *.user
 *.sln.docstates
 *.xap
-AzureKeys.txt
+AzureKeys.json
 
 # Build results
 
