@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectMirror", "ProjectMirror\ProjectMirror.csproj", "{93530C9D-2755-4730-85A1-8ED2B6D64F5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsWP8", "ColorsWP8\ColorsWP8.csproj", "{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://akshay2000.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ProjectMirror\\ProjectMirror.csproj
+		SccProjectName1 = ProjectMirror
+		SccLocalPath1 = ProjectMirror
+		SccProjectUniqueName2 = ColorsWP8\\ColorsWP8.csproj
+		SccProjectName2 = ColorsWP8
+		SccLocalPath2 = ColorsWP8
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Debug|ARM.Build.0 = Debug|ARM
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Debug|x86.ActiveCfg = Debug|x86
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Debug|x86.Build.0 = Debug|x86
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Release|ARM.ActiveCfg = Release|ARM
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Release|ARM.Build.0 = Release|ARM
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Release|x86.ActiveCfg = Release|x86
+		{93530C9D-2755-4730-85A1-8ED2B6D64F5B}.Release|x86.Build.0 = Release|x86
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Debug|ARM.ActiveCfg = Debug|ARM
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Debug|ARM.Build.0 = Debug|ARM
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Debug|ARM.Deploy.0 = Debug|ARM
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Debug|x86.ActiveCfg = Debug|x86
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Debug|x86.Build.0 = Debug|x86
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Debug|x86.Deploy.0 = Debug|x86
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Release|ARM.ActiveCfg = Release|ARM
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Release|ARM.Build.0 = Release|ARM
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Release|ARM.Deploy.0 = Release|ARM
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Release|x86.ActiveCfg = Release|x86
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Release|x86.Build.0 = Release|x86
+		{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

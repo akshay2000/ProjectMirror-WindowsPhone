@@ -1,0 +1,94 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="ColorsWP8.Pages.TasksPivotePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.Opacity="0">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="TasksDateTemplate">
+            <StackPanel x:Name="TaskWrapperTaskPanel" Orientation="Horizontal">
+                <CheckBox x:Name="IsCompleteCheckBox" Foreground="Black" IsChecked="{Binding ItemIsComplete, Mode=TwoWay}"/>
+                <TextBlock x:Name="TaskNameTextBlock" Foreground="Black" Text="{Binding ItemName}"/>
+            </StackPanel>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#1BA1E2"/>
+        
+        
+        <!--Pivot Control-->
+        <phone:Pivot x:Name="TasksPivote" Foreground="Black" Grid.Row="1" Title="COLORS" Background="#D6FAFF">
+            <!--Pivot item one-->
+            <phone:PivotItem Header="today">
+                <Grid>
+                    <phone:LongListSelector 
+                        ItemTemplate="{StaticResource TasksDateTemplate}"
+                        ItemsSource="{Binding TodayToDoItems}"/>
+                </Grid>
+            </phone:PivotItem>
+
+            <!--Pivot item two-->
+            <phone:PivotItem Header="tomorrow">
+                <Grid>
+                    <phone:LongListSelector 
+                        ItemTemplate="{StaticResource TasksDateTemplate}"
+                        ItemsSource="{Binding TodayToDoItems}"/>
+                </Grid>
+            </phone:PivotItem>
+            
+            <phone:PivotItem Header="this week">
+                <Grid>
+                    <phone:LongListSelector 
+                        ItemTemplate="{StaticResource TasksDateTemplate}"
+                        ItemsSource="{Binding WeekToDoItems}"/>
+                </Grid>
+            </phone:PivotItem>
+            
+            <phone:PivotItem Header="eternity">
+                <Grid>
+                    <phone:LongListSelector 
+                        ItemTemplate="{StaticResource TasksDateTemplate}"
+                        ItemsSource="{Binding AllToDoItems}"/>
+                </Grid>
+            </phone:PivotItem>
+            
+            <phone:PivotItem Header="overdue">
+                <Grid>
+                    <phone:LongListSelector 
+                        ItemTemplate="{StaticResource TasksDateTemplate}"
+                        ItemsSource="{Binding OverToDoItems}"/>
+                </Grid>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+
+            <shell:ApplicationBarIconButton x:Name="AddToDoAppBarbutton" IconUri="/Assets/Icons/add.png" Text="add" Click="AddToDoAppBarbutton_Click" />
+            <shell:ApplicationBarIconButton x:Name="SyncAppBarButton" IconUri="Assets/Icons/refresh.png" Text="sync" Click="SyncAppBarButton_Click" />
+            <shell:ApplicationBarIconButton x:Name="DummyButton" IconUri="Assets/Icons/check.png" Text="check" Click="DummyButton_Click"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem x:Name="AboutAppBarMenuItem" Text="about" />
+                <shell:ApplicationBarMenuItem x:Name="FeedbackAppBarMenuItem" Text="feedback"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

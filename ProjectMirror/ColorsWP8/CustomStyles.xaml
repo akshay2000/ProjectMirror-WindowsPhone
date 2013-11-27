@@ -1,0 +1,9 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Style x:Key="CategoryTextBlockStyle" BasedOn="{StaticResource PhoneTextBlockBase}" TargetType="TextBlock">
+		<Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+		<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeExtraLarge}"/>
+	</Style>
+	<!-- Resource dictionary entries should be defined here. -->
+</ResourceDictionary>
