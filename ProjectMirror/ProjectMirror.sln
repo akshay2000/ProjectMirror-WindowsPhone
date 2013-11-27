@@ -8,18 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsWP8", "ColorsWP8\ColorsWP8.csproj", "{9EE8518F-9CD4-4FD0-A603-5F1EA57808D2}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://akshay2000.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ProjectMirror\\ProjectMirror.csproj
-		SccProjectName1 = ProjectMirror
-		SccLocalPath1 = ProjectMirror
-		SccProjectUniqueName2 = ColorsWP8\\ColorsWP8.csproj
-		SccProjectName2 = ColorsWP8
-		SccLocalPath2 = ColorsWP8
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
