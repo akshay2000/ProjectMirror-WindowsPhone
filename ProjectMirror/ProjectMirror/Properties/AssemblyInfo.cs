@@ -9,9 +9,9 @@ using System.Resources;
 [assembly: AssemblyTitle("ProjectMirror")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("akshay2000")]
 [assembly: AssemblyProduct("ProjectMirror")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyCopyright("akshay2000")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
