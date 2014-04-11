@@ -120,9 +120,9 @@ namespace ProjectMirror
             var remoteIds = (from item in newRemoteItems
                             select item.RemoteId).ToList();
 
-            var conflictedIds = remoteIds.Intersect<int>(localIds).ToList();
+            var conflictedIds = remoteIds.Intersect<string>(localIds).ToList();
 
-            foreach(int t in conflictedIds)
+            foreach(string t in conflictedIds)
             {
                 var localItem = newLocalItems.FirstOrDefault(item => item.RemoteId == t);
                 var remoteItem = newRemoteItems.FirstOrDefault(item => item.RemoteId == t);
@@ -156,7 +156,7 @@ namespace ProjectMirror
             //Put local changes in cloud table
             foreach (var localItem in newLocalItems)
             {
-                if (localItem.RemoteId == 0)
+                if (localItem.RemoteId == null || localItem.RemoteId == String.Empty)
                 {
                     //Update LastSynchronized as well as RemoteId
                     await remoteTable.InsertAsync(localItem);                   

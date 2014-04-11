@@ -75,30 +75,6 @@ namespace ColorsWP8
         //    ApplicationBar.MenuItems.Add(appBarMenuItem);
         //}
 
-        private async Task AuthenticateAsync()
-        {
-            LiveAuthClient authClient = new LiveAuthClient("000000004010B920");
-            LiveLoginResult result = await authClient.InitializeAsync(new[] { "wl.signin", "wl.offline_access" });
-            LiveConnectSession session = result.Session;
-            MobileServiceUser user = null;
-
-            if (session == null)
-            {
-                NavigationService.Navigate(new Uri("/SplashPage.xaml", UriKind.Relative));
-                return;
-            }
-            if (result.Status == LiveConnectSessionStatus.Connected)
-            {
-                string authToken = session.AuthenticationToken;
-                user = await App.MirrorService.AuthenticateWithMicrosoftAsync(authToken);
-            }
-            else
-            {
-                MessageBox.Show("Something went wrong with the authentication", "Sorry", MessageBoxButton.OK);
-            }
-
-        }
-
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -119,8 +95,10 @@ namespace ColorsWP8
 
         private async void SyncAppBarButton_Click(object sender, EventArgs e)
         {
+            ManageSystemTray("Synchronizing...", true);
             await App.ViewModel.SyncCategoriesAsync();
             App.ViewModel.LoadCategories();
+            ManageSystemTray("", false);
         }     
     }
 }

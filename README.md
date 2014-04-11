@@ -12,8 +12,8 @@ It is a library to synchronize data between Windows Phone's local database and W
 I'm glad you ask. You have to follow a few simple steps and you'll have your data synchronized in no time!
 If you prefer to learn from code, take a look at `ColorsWP8` project. It is a demo app.
 
-**Prepare your solution**  
 First of all, you need to have a project targetted to Windows Phone 8 in your solution. Then download this code and add `ProjectMirror` to your solution. Make sure you are using latest versions of assemblies referred by your projects. If not, update them using NuGet.
+**Prepare your solution**  
 
 **Prepare the models**  
 Now, I'm going to assume that your app uses MVVM pattern. (If it doesn't, [it should](http://stackoverflow.com/questions/1644453/why-mvvm-and-what-are-its-core-benefits).) Inherit your model classes from `NotifyBase` and implement `ISyncable` interface on them. (Both are available in namespace `ProjectMirror`.) Each model which wants to be synced must:
