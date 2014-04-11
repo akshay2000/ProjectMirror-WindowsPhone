@@ -69,7 +69,7 @@ Make sure that you have set table access permissions to 'Only Authenticated User
 Authentication methods provided by `MirrorSyncService` are exactly like the methods provided by WAMS SDK. In addition to that, the `AuthenticationManager` class provides an example of how other SDKs can be used to provide seamless authentication experience.
 
 **Configure WAMS**  
-We need to do some modifications in scripts before data synchronization can work. Modify the `Read` script so that it retuns data belonging to our user only. This is also explained in detail in Windows Azure [documentation](http://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-with-users-wp8/).
+We need to do some modifications in scripts before data synchronization can work. Modify the `Read` script so that it returns data belonging to our user only. This is also explained in detail in Windows Azure [documentation](http://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-with-users-wp8/).
 
 ```
 function read(query, user, request) {
@@ -106,7 +106,7 @@ App.MirrorService.UpdateItemAsync<ToDoCategory>(categoryToUpdate);
 var categories = await App.MirrorService.LoadItemsAsync<ToDoCategory>();
 ```
 
-Then finally, when you're done manupulating data, call the `SynchronizeAsync` method to synchronize your data. This method synchronizes only the table you specify.
+Then finally, when you're done manipulating data, call the `SynchronizeAsync` method to synchronize your data. This method synchronizes only the table you specify.
 
 ```
 await App.MirrorService.SynchronizeAsync<ToDoCategory>();
