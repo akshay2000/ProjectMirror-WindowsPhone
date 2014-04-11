@@ -15,7 +15,7 @@ namespace ProjectMirror
     {
         int LocalId { get; set; }
 
-        int RemoteId { get; set; }
+        string RemoteId { get; set; }
 
         bool IsDeleted { get; set; }
 

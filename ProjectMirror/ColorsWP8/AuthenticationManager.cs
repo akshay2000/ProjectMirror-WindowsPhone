@@ -29,7 +29,7 @@ namespace ColorsWP8
 
         public async Task AuthenticateAsync()
         {
-            LiveAuthClient authClient = new LiveAuthClient("000000004010B920");
+            LiveAuthClient authClient = new LiveAuthClient("000000004C114D3D");
             LiveLoginResult result = await authClient.InitializeAsync(new[] { "wl.signin", "wl.offline_access" });
             LiveConnectSession session = result.Session;
             MobileServiceUser user = null;

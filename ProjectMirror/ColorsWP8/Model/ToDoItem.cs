@@ -33,10 +33,10 @@ namespace ColorsWP8.Model
             }
         }
 
-        private int _remoteId;
+        private string _remoteId;
         [Column(CanBeNull = true)]
         [JsonProperty(PropertyName = "id")]
-        public int RemoteId
+        public string RemoteId
         {
             get
             {
